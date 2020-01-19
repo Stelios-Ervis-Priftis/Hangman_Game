@@ -32,9 +32,9 @@ class Hangman {
 
         this.word.forEach((letter) => {
             if (this.guessedLetters.includes(letter) || letter === ' ') {
-                puzzle += letter
+                puzzle = puzzle + letter
             } else {
-                puzzle += '*'
+                puzzle = puzzle + '*'
             }
         })
 

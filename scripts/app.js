@@ -11,12 +11,19 @@ window.addEventListener('keypress', (e) => {
 })
 
 const render = () => {
-    puzzleEl.textContent = gameOne.puzzle.charAt(0).toUpperCase() + gameOne.puzzle.slice(1)
+    puzzleEl.innerHTML = ''
     statusMessageEl.textContent = gameOne.statusMessage
+    const letters = gameOne.puzzle.split('')
+    letters.forEach(letter => {
+        const letterEl = doc.createElement('span')
+        letterEl.textContent = letter
+        puzzleEl.appendChild(letterEl)
+    })
+    // gameOne.puzzle.charAt(0).toUpperCase() + gameOne.puzzle.slice(1)
 }
 
 const startGame = async () => {
-    const puzzle = await getPuzzleFetch(2)
+    const puzzle = await getPuzzleFetch(1)
     gameOne = new Hangman(puzzle, 4)
     render()
 }
