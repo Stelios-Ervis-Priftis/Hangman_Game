@@ -12,7 +12,8 @@ html {
 body {
     background: #2B292E;
     color: #fafafa;
-    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-family: monospace;
     font-size: 1.6rem;
     display: flex;
     align-items: center;
@@ -21,7 +22,8 @@ body {
 }
 
 h1 {
-    padding-bottom: 50px;
+    margin-bottom: 5rem;
+    text-align: center;
 }
 
 span {
@@ -30,7 +32,7 @@ span {
     font-size: 2rem;
     height: 2.4rem;
     line-height: 2.4rem;
-    margin: 0 .1rem;
+    margin: 0 .5rem;
     text-align: center;
     text-transform: uppercase;
     width: 2.4rem;
@@ -38,12 +40,13 @@ span {
 
 p {
     font-weight: 300;
-    margin-bottom: .8rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .puzzle {
     display: flex;
-    margin-bottom: 4.8rem;
+    margin-bottom: 5rem;
 }
 
 .button {
@@ -60,4 +63,8 @@ p {
 
 .button:hover {
     background: #5F3A87;
+}
+
+#reset-button {
+    display: grid;
 }
