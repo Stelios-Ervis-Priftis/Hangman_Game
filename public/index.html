@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="header">
+                <h1 class="title">Hangman Game</h1>
+                <p class="sub-paragraph">Vanilla JavaScript Hangman Game</p>
+            </div>
+            <div class="instructions">
+                <p class="paragraph">Use your keyboard letters to guess the word.</p>
+                <p class="new-paragraph"></p>
+            </div>
+            <div class="puzzle" id="puzzle"></div>
+            <p class="statusMessage" id="statusMessage"></p>
+            <div class="reset-button" id="reset-button">
+                <button id="reset" class="button">Reset Game</button>
+            </div>
+            <!-- <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti fugit commodi ratione impedit? Earum deleniti repudiandae architecto pariatur, possimus, laborum quisquam ad adipisci natus, enim sit harum nobis cupiditate.</p> -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

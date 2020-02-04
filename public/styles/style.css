@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #2B292E;
+    font-size: 1.6rem;
+}
+
+.container {
+    height: 726px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 1rem;
+}
+
+.title {
+    place-self: center;
+    text-align: center;
+    font-size: 6rem;
+}
+
+.sub-paragraph {
+    place-self: center;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.instructions {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 10rem;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    /* width: 60%; */
+    text-align: center;
+    place-self: center;
+    text-decoration: underline;
+}
+
+.new-paragraph {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+    place-self: center;
+    text-decoration: underline;
+}
+
+.puzzle {
+    place-self: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+span {
+    border-bottom: 2px solid #534f59;
+    display: inline-block;
+    font-size: 2.5rem;
+    height: 2.5rem;
+    line-height: 2rem;
+    margin: 0px 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 3.5rem;
+}
+
+.statusMessage {
+    font-size: 2rem;
+    place-self: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.reset-button {
+    place-self: center;
+}
+
+.button {
+    padding: 0.5rem 5rem;
+    font-size: 2rem;
+    border: 1px solid#8a2be29e;
+    border-radius: 0.5rem;
+    background-color:#8a2be29e;
+}
+
+.button:hover {
+    border: 1px solid blueviolet;
+    background-color:blueviolet;
+}
+
+.button:active {
+    border: 1px solid#8a2be29e;
+    background-color:#8a2be29e;
+}
+
+/* 
+
+body {
+    background: #2B292E;
+    color: #fafafa;
+    font-family: monospace;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    border-bottom: 1px solid #534f59;
+    display: inline-block;
+    font-size: 2rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    margin: 0 .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 2.4rem;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.puzzle {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.button {
+    background: #7044a0;
+    border: none;
+    border-bottom: 2px solid #603a88;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+}
+
+.button:hover {
+    background: #5F3A87;
+}
+
+#reset-button {
+    display: grid;
+} */

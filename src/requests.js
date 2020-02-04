@@ -8,3 +8,5 @@ const getPuzzleFetch = async (wordCount) => {
         throw new Error('Unable to fetch data')
     }
 }
+
+export { getPuzzleFetch as default }

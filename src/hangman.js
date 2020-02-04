@@ -1,4 +1,5 @@
-'use strict'
+// Importing the helpers.js
+import { log, doc } from "./helpers";
 
 class Hangman {
     constructor(word, remainingGuesses) {
@@ -20,6 +21,12 @@ class Hangman {
     }
     get statusMessage() {
         if (this.status === 'playing') {
+            // const message = `Guesses left: ${this.remainingGuesses}`
+            // const remainingGuesses = this.remainingGuesses
+            // return {
+            //     message, 
+            //     remainingGuesses
+            // }
             return `Guesses left: ${this.remainingGuesses}`
         } else if (this.status === 'failed') {
             return `Nice try! The word was ${this.word.join('').charAt(0).toUpperCase() + this.word.join('').slice(1)}`
@@ -59,3 +66,5 @@ class Hangman {
         this.calculateStatus()
     }
 }
+
+export { Hangman as default }
