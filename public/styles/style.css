@@ -64,10 +64,16 @@ body {
 
 .new-paragraph {
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
     place-self: center;
     text-decoration: underline;
+}
+
+.non-exist-letters {
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    color: red;
 }
 
 .puzzle {

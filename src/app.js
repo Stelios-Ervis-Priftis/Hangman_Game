@@ -30,13 +30,14 @@ let gameOne
 window.addEventListener('keypress', (e) => {
     const guess = String.fromCharCode(e.charCode)
     gameOne.makeGuess(guess)
+
+    log(gameOne.nonGuessedLetters())
     render()
 })
 
 const render = () => {
     puzzleEl.innerHTML = ''
     const message = statusMessageEl.textContent = gameOne.statusMessage
-    log(message)
     
     const letters = gameOne.puzzle.split('')
     letters.forEach(letter => {
@@ -55,11 +56,11 @@ const startGame = async () => {
 }
 
 doc.querySelector('#reset').addEventListener('click', (e) => {
-    startGame();
-    animateCSS(puzzleEl, "flipInX");
+    startGame()
+    animateCSS(puzzleEl, 'flipInX')
 
     new TypeIt('.new-paragraph', {
-      strings: `Let's see how good you are this time...`,
+      strings: `Let's see how good you are this time!`,
       speed: 85,
       loop: false,
       lifeLike: true,

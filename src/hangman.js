@@ -6,6 +6,7 @@ class Hangman {
         this.word = word.toLowerCase().split('')
         this.remainingGuesses = remainingGuesses
         this.guessedLetters = []
+        this.nonExistingLetters = []
         this.status = 'playing'
     }
     calculateStatus() {
@@ -61,9 +62,22 @@ class Hangman {
         }
 
         if (isUnique && isBadGuess) {
+            this.nonExistingLetters.push(guess)
             this.remainingGuesses--
         }
         this.calculateStatus()
+    }
+    nonGuessedLetters() {
+        let message
+        const letters = this.nonExistingLetters
+
+        letters.forEach(letter => {
+            message = `Wrong guessed letters [${letter}]`
+            // const nonExistLetters = doc.querySelector('.non-exist-letters')
+            // nonExistLetters.textContent =
+        });
+
+        return message
     }
 }
 
